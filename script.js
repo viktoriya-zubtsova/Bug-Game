@@ -1,5 +1,14 @@
-function doFetch(name) {
-  fetch('https://api.github.com/users/' + name)
+let url = window.location.search;
+function getName(url) {
+	let getUrl = url.split('=');
+	let name = getUrl[1];
+	if(name == null) {
+	name = 'viktoriya-zubtsova';
+	}
+	return name;
+}
+function doFetch() {
+  fetch(`https://api.github.com/users/${getName(url)}`)
   .then(res => res.json())
   .then(json => {
     let avatar = document.createElement('img');
@@ -13,10 +22,10 @@ function doFetch(name) {
     if(json.login != null) {
       link.innerHTML = json.login + '<br>';
     } else {
-      link.innerHTML = 'Нет информации об имени';
+      link.innerHTML = 'Нет информации об имени<br>';
     }
     if(json.bio != null) {
-      document.body.innerHTML= json.bio;
+      document.body.innerHTML= json.bio +'<br>';
     } else {
       document.body.innerHTML= ('Нет информации о биографии<br>');
     }
@@ -25,5 +34,5 @@ function doFetch(name) {
     })
   .catch(err => document.body.innerHTML = ('Информация о пользователе недоступна'));
 }
-let userName = 'viktoriya-zubtsova';
-doFetch(userName);
+doFetch(name);
+console.log(window.location.search);
