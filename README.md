@@ -5,13 +5,13 @@
 
 eslint: `id-length`
 
-не надо так
+не надо так :-(
 ``` js
 function q() {
   // ...
 }
 ```
-надо так
+надо так :-)
 ``` js
 function query() {
   // ...
@@ -21,11 +21,11 @@ function query() {
 
 eslint: `no-undef, prefer-const`
 
-не надо так
+не надо так :-(
 ``` js
 uperPower = new SuperPower();
 ```
-надо так
+надо так :-)
 ``` js
 const superPower = new SuperPower();
 ```
@@ -33,7 +33,7 @@ const superPower = new SuperPower();
 
 eslint: `no-unused-vars`
 
-не надо так
+не надо так :-(
 ``` js
 let x = 0;
 let y = 1; // Переменная не используется
@@ -42,7 +42,7 @@ function getX() {
     return x + 1;
 }
 ```
-надо так
+надо так :-)
 ``` js
 let x = 0;
 
@@ -54,7 +54,7 @@ function getX() {
 
 eslint: `prefer-const, no-const-assign`
 
-не надо так
+не надо так :-(
 ``` js
 var a = 1;
 var b = 2;
@@ -64,7 +64,7 @@ if (true) {
   count += 1;
 }
 ```
-надо так
+надо так :-)
 ``` js
 const a = 1;
 const b = 2;
@@ -78,7 +78,7 @@ if (true) {
 
 eslint: `prefer-template, template-curly-spacing`
 
-не надо так
+не надо так :-(
 ``` js
 function sayHi(name) {
   return 'How are you, ' + name + '?';
@@ -92,7 +92,7 @@ function sayHi(name) {
   return `How are you, ${ name }?`;
 }
 ```
-надо так
+надо так :-)
 ``` js
 function sayHi(name) {
   return `How are you, ${name}?`;
@@ -102,14 +102,14 @@ function sayHi(name) {
 
 eslint: `nonblock-statement-body-position`
 
-не надо так
+не надо так :-(
 ``` js
 if (test)
   return false;
 
 function foo() { return false; }
 ```
-надо так
+надо так :-)
 ``` js
 if (test) return false;
 
@@ -121,11 +121,11 @@ function bar() {
 
 eslint: `quotes`
 
-не надо так
+не надо так :-(
 ``` js
 const name = "Capt. Janeway";
 ```
-надо так
+надо так :-)
 ``` js
 const name = 'Capt. Janeway';
 ```
@@ -133,11 +133,11 @@ const name = 'Capt. Janeway';
 
 eslint: `no-new-object`
 
-не надо так
+не надо так :-(
 ``` js
 const item = new Object();
 ```
-надо так
+надо так :-)
 ``` js
 const item = {};
 ```
@@ -145,7 +145,7 @@ const item = {};
 
  eslint: `no-dupe-keys`
 
-не надо так
+не надо так :-(
 ``` js
  var foo = {
      bar: "baz",
@@ -157,7 +157,7 @@ const item = {};
      bar: "qux"
  };
 ```
-надо так
+надо так :-)
 ``` js
  var foo = {
      bar: "baz",
@@ -165,14 +165,14 @@ const item = {};
  };
  ```
  **10. Используй квадратные скобки [ ] для объявления массивов.**
- 
+
  eslint: `no-array-constructor`
 
-не надо так
+не надо так :-(
 ``` js
  const items = new Array();
 ```
-надо так
+надо так :-)
 ``` js
  const items = [];
 ```
