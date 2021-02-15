@@ -1,0 +1,164 @@
+body{
+  margin: 0;
+  background: url(img/background.png) no-repeat;
+  background-size: cover;
+}
+.wrapper{
+  width: 85%;
+  margin: auto;
+}
+.main__title{
+  color: #fff;
+  font: 700 57px/67px Roboto, arial, helvetica, sans-serif;
+  padding-top: 83px;
+  margin-bottom: 8px;
+}
+.main__text{
+  color: #fff;
+  font: 400 19px/23px Roboto, arial, helvetica, sans-serif;
+  margin: 0 auto 60px auto;
+}
+.main__menu{
+  margin-bottom: 112px;
+  list-style-type: none;
+}
+.main__menu_item{
+  position: relative;
+  color: #fff;
+  font: 700 50px/59px Roboto, arial, helvetica, sans-serif;
+  margin-bottom: 24px;
+}
+.main__menu_item-active::before{
+  position: absolute;
+  display: block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  left: -42px;
+  top: 20px;
+  background: #D62B2E;
+  transform: rotate(45deg);
+}
+.main__button{
+  color: #fff;
+  font: 700 32px/38px Roboto, arial, helvetica, sans-serif;
+  background-color: #D62B2E;
+  border-radius: 7px;
+  padding: 28px 85px;
+}
+.image{
+  position: absolute;
+  max-width: 36%;
+  left: 59%;
+  top: 49%;
+}
+.game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.level-10{
+  max-width: 1190px;
+}
+.level-3-6{
+  max-width: 710px;
+}
+.game__card {
+  width: 218px;
+  height: 341px;
+  perspective: 1000px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  margin: 0 24px 24px 0;
+}
+.game__card:hover{
+  cursor: pointer;
+}
+.game__card-back:hover{
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+  transform: rotate(-3.08deg);
+  transition: 1s;
+}
+.game__card-back, .game__card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.game__card-front {
+  transform: rotateY(180deg);
+}
+.active {
+  transform: rotateY(180deg);
+}
+.hidden{
+  display: none;
+}
+@media (max-width: 1300px) {
+  .main__title{
+    font-size: 7vh;
+    padding-top: 65px;
+  }
+  .main__menu_item{
+    font-size: 5vh;
+  }
+  .main__button{
+    font-size: 3vh;
+    padding: 20px 60px;
+  }
+}
+@media (max-width: 905px) {
+  .main__title{
+    font-size: 6vh;
+  }
+  .main__menu{
+    margin-bottom: 10vh;
+  }
+  .main__menu_item{
+    font-size: 4vh;
+  }
+  .image{
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .main__title{
+    padding-top: 10vh;
+    font: 700 35px/40px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__text{
+    font: 400 19px/23px Roboto, arial, helvetica, sans-serif;
+    margin-bottom: 42px;
+  }
+  .main__menu_item{
+    font: 700 30px/40px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__menu_item-active::before{
+    width: 15px;
+    height: 15px;
+    top: 25px;
+  }
+  .main__button{
+    font: 700 24px/24px Roboto, arial, helvetica, sans-serif;
+    padding: 20px 60px;
+  }
+}
+@media (max-width: 350px) {
+  .main__title{
+    font: 700 30px/35px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__text{
+    font: 400 19px/23px Roboto, arial, helvetica, sans-serif;
+    margin-bottom: 5vh;
+  }
+  .main__menu_item{
+    font: 700 25px/30px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__button{
+    padding: 15px 40px;
+  }
+}
