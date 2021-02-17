@@ -53,9 +53,9 @@ body{
 }
 .image{
   position: absolute;
-  max-width: 36%;
+  max-width: 515px;
   left: 59%;
-  top: 49%;
+  top: calc(100vh - 515px);
 }
 .game{
   display: flex;
@@ -121,6 +121,9 @@ body{
   .main__button{
     font-size: 3vh;
     padding: 20px 60px;
+  }
+  .image{
+    max-width: 36%;
   }
   .game__card {
     width: 130px;

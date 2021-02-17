@@ -15,7 +15,7 @@ document.querySelectorAll('.main__menu_item').forEach (item => item.addEventList
 function createCard() {
 	let card = document.createElement('div');
 	card.classList.add('game__card');
-	card.innerHTML = '<div class="game__card-back"><img class="card_img" src="img/back.svg"></div><div class="game__card-front"><img class="card_img card-front_img"></div>';
+	card.innerHTML = '<div class="game__card-back"><img class="card_img" src="img/back.png"></div><div class="game__card-front"><img class="card_img card-front_img"></div>';
 	game.appendChild(card);
 	}
 
