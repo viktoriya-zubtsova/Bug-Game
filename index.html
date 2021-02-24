@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Карты с бгами оО</title>
   <meta charset=”UTF-8”>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
   <meta name="viewport" content="width=device-width, inital-scale=1">
+  <title>Карты с бaгами оО</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
 </head>
 <body>
+  <div class="background">
+    <section class="wrapper">
+      <main class="main">
+        <h1 class="main__title">Выберите уровень сложности:</h1>
+        <p class="main__text">Выберите сложность и игра начнется. Чем выше уровень -
+          тем больше будет выборка карт.</p>
+        <ul class="main__menu">
+          <li class="main__menu_item easy main__menu_item-active" value="3">Простой</li>
+          <li class="main__menu_item middle" value="6">Средний</li>
+          <li class="main__menu_item hard" value="10">Сложный</li>
+        </ul>
+        <button class="main__button" type="button" name="button">Начать игру</button>
+      </main>
+      <img class="image" src="img/group.png">
+    </section>
+    <section class="game hidden">
+    </section>
+  </div>
 <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
